@@ -422,7 +422,7 @@
                     <div class="row copyright">
                         <div class="col-lg-12 col-12">
                             <p>
-                                All Rights Reserved. Copyright Laracamp BWA Indonesia.
+                                All Rights Reserved. Copyright Laracamp RioDev.
                             </p>
                         </div>
                     </div>
@@ -430,13 +430,11 @@
             </div>
         </div>
     </section>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-</body>
-
-</html>
-@endsection
+    @endsection
+    @push('js')
+        <script>
+            setTimeout(function(){ 
+                document.getElementById("btn-modal").click();
+             }, 2000);
+        </script>
+    @endpush
